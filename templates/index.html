@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Stable Diffusion | Home</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>Stable Diffusion</h1>
+      <br>
+      <br>
+      <form action="{{ url_for('resultsPage') }}" method="POST">
+      <input name="prompt" type="text" placeholder="Enter a prompt">
+      <input name="amount" type="number" min="1" max="10" placeholder="Enter the amount of results">
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </center>
+  </body>
+</html>

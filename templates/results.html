@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Stable Diffusion | Results</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>Results</h1>
+      <br>
+      <br>
+      {% for image in data.images %}
+      <img src={{image}}>
+      {% endfor %}
+    </center>
+  </body>
+</html>
