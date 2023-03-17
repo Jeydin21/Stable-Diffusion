@@ -12,6 +12,7 @@ def resultsPage():
   prompt = str(request.form.get('prompt'))
   amount = str(request.form.get('amount'))
   images = getData(prompt, amount)
-  return render_template("results.html", data = images)
+  print(images)
+  return render_template("results.html", images = images)
 
 app.run(host = '0.0.0.0', port = 6969, threaded = True)

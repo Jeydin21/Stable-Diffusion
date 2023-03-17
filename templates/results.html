@@ -8,8 +8,8 @@
       <h1>Results</h1>
       <br>
       <br>
-      {% for image in data.images %}
-      <img src={{image}}>
+      {% for image in images %}
+      <img src="{{image|safe}}">
       {% endfor %}
     </center>
   </body>
